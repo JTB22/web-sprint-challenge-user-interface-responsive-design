@@ -100,7 +100,7 @@ header {
     background-repeat: no-repeat;
 }
 .title {
-    padding: 1% 0;
+    padding: 2% 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -111,21 +111,32 @@ header {
     display: flex;
 }
 .title h1 a {
-    font-size: 7rem;
+    font-size: 8rem;
 }
 nav {
+    width: 70vw;
+}
+.nav-links {
     display: flex;
     flex-direction: row;
+    padding-top: 2%;
     width: 100%;
     justify-content: space-around;
-
+    
 }
 nav a {
-    font-size: 2.5rem;
+    font-size: 3rem;
     display: flex;
     justify-content: center;
-    width: 12ch;
+    padding: 0 1%;
     color: white;
+}
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-top: 2%;
 }
 
 /* spacers */
@@ -246,7 +257,7 @@ footer {
     .title h1 a {
         font-size: 2.5rem;
     }
-    nav {
+    .nav-links {
         justify-content: center;
         align-items: center;
         flex-direction: column;
