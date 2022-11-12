@@ -49,6 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
+    color: white;
 }
 
 html {
@@ -85,15 +86,69 @@ h4 {
 p, a {
     font-size: 3rem;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+}
 
 /* header section */
 header {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
+    align-items: center;
     background-image: url('../img/menu-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.title {
+    padding: 2% 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(0, 4, 17, .8);
+}
+.title h1 {
+    display: flex;
+}
+.title h1 a {
+    font-size: 8rem;
+    color: white;
+}
+nav {
+    width: 70vw;
+}
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+    justify-content: space-around;
+    
+}
+nav a {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    padding: 0 1%;
+    color: white;
+}
+.socials {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 6%;
+    padding-bottom: 3%;
+}
+.socials a {
+    display: flex;
+    padding: 0 6%;
+}
+.socials i {
+    width: 35px;
+    height: 35px;
 }
 
 /* spacer */
@@ -113,20 +168,51 @@ header {
 .menu {
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
     background-image: url('../img/staff-bartender.jpg');
-    background-color: rgb(0, 4, 17);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    font-size: 3rem;
 }
-
+.text-holder {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    background-color: rgb(0, 4, 17, .8);
+}
+.text-holder h2 {
+    text-align: center;
+    width: 100%;
+}
 /* footer section */
 footer {
     width: 100%;
-    height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(0, 4, 17);
 }
+footer button {
+    color: black;
+}
+footer form {
+    
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.footer p {
+    padding: 1vw 2.5vh;
+}
+
+
 
 /* mobile media query */
 @media (max-width: 428px) {

@@ -129,7 +129,7 @@ nav a {
     color: white;
 }
 .socials {
-    height: 30px;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -139,6 +139,10 @@ nav a {
 .socials a {
     display: flex;
     padding: 0 6%;
+}
+.socials i {
+    width: 35px;
+    height: 35px;
 }
 .gallery {
     display: flex;
@@ -261,9 +265,26 @@ nav a {
 /* footer section */
 footer {
     width: 100%;
-    height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(0, 4, 17);
+}
+footer button {
+    color: black;
+}
+footer form {
+    
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.footer p {
+    padding: 1vw 2.5vh;
 }
 
 /* mobile media query */
@@ -272,9 +293,6 @@ footer {
     header {
         min-height: 40vh;
     }
-    .title {
-        padding: 0;
-    }
     .title h1 {
         margin-top: 2%;
     }
@@ -282,15 +300,19 @@ footer {
         font-size: 2.5rem;
     }
     .nav-links {
-        justify-content: center;
-        align-items: center;
+        display: flex;
         flex-direction: column;
-        width: 90%;
+        justify-content: space-between;
+        align-items: center;
     }
     nav a {
+        flex-direction: column;
         font-size: 2rem;
     }
-
+    .socials a {
+        display: flex;
+        justify-content: space-evenly;
+    }
     /* gallery section */
     .gallery {
         height: auto;
